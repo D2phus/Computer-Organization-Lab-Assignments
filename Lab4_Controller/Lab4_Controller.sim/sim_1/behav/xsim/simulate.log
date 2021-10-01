@@ -1,0 +1,407 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000001
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000001 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000001 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: zzzzzzzz 
+ MAR: 00000001 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000010
+
+PC: 00000010 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000011
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000011 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000011 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: zzzzzzzz 
+ MAR: 00000011 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000100 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000101
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000101 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000101 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: zzzzzzzz 
+ MAR: 00000101 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000110
+
+PC: 00000110 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzz10000 
+ MAR: 00000111 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001000
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001001
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100011
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+

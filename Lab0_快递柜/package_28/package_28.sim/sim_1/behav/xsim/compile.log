@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/package_28/package_28.srcs/sources_1/new/package.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module package
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'segs0' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:77]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'segs1' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:78]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'led' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:79]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'len' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:80]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'choice' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:93]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'srcode' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:120]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'currentstate' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:136]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'nextstate' is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:137]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/package_28/package_28.srcs/sim_1/new/package_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module package_sim

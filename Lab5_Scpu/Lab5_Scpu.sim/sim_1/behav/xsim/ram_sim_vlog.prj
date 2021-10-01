@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Lab5_Scpu.srcs/sources_1/ip/cpuclk" \
+"../../../../Lab5_Scpu.srcs/sources_1/ip/ram/sim/ram.v" \
+"../../../../Lab5_Scpu.srcs/sources_1/new/DM.v" \
+"../../../../Lab5_Scpu.srcs/sim_1/new/ram_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

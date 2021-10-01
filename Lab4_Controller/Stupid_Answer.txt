@@ -1,0 +1,93 @@
+`timescale 1ns / 1ps
+`define  NOP          4'b0000
+`define  LOAD         4'b0010
+`define  STORE        4'b0011
+`define  MOVE         4'b0100
+`define  ADD          4'b0101
+`define  AND          4'b0110
+`define  JUMP         4'b0111
+`define  JUMPZ        4'b1000
+`define  JUMPNZ        4'b1001
+`define  LOADR         4'b1010
+//第一字节高4位：操作码OP
+
+module Control_Unit(
+    input clk,
+    input reset,
+    input [7:0] IR,
+    input ZF,
+    output PC_i, IR_i, MAR_i, MDR_i, ACC_i, SP_i, R_i,
+    output PC_o, MDR_o, ACC_o, SP_o, R_o,
+    output PC_Sel, MDR_Sel, ACC_Sel,
+    output ALU_Sel,
+    output MemRead, MemWrite
+    );
+    wire [3:0] OPCode;//第一字节高4位：操作码OP
+    assign OPCode=IR[7:4];
+    
+    //控制存储器
+    reg [31:0] ucode_mem [255:0];
+    initial begin
+        $readmemb("microcode.txt", ucode_mem);
+    end
+    
+    ////微指令CMDR、upc////
+    reg [4:0] upc;//upc：存放控制存储器下地址，ucode_mem：256=2^8行
+    reg [4:0] nextAddr=5'd0;//微指令下址
+    wire [31:0] CMDR;//CMDR：存放当前微指令
+    assign CMDR=ucode_mem[upc];
+    
+    ////微指令切分////
+    //操作控制字段，控制数据通路
+    wire [17:0] ConSeg;//保留位不计
+    assign ConSeg=CMDR[29:12];
+    //顺序控制字段，供给下址逻辑
+    wire condJMP;//条件分支标志位,1：考虑
+    assign condJMP=CMDR[11];
+    wire condSel;//condJMP=1时考虑，0:ZF, 1:~ZF
+    assign condSel=CMDR[10];
+    wire [1:0] nextAddrSel;//选择微指令下地址,00: upc+1，01:直接下址，10：指令译码
+    assign nextAddrSel=CMDR[9:8];
+    wire [7:0] addr;//显式指明的下地址字段
+    assign addr=CMDR[7:0];
+    
+    wire flag;//条件分支标志位
+    assign flag=condJMP;//0:JUMPZ, 1:JUMPNZ
+   
+    ////////////下址生成逻辑////////////
+    //通过顺序控制字段判断
+    always@(*)
+    begin
+            if(flag&&(condSel^ZF))
+                nextAddr<=upc+1;
+            else if(flag&&!(condSel^ZF))
+                nextAddr<=addr;
+            else if(nextAddrSel==2'b00)
+                nextAddr<=upc+1;
+            else if(nextAddrSel==2'b01)
+                nextAddr<=addr;
+            else begin
+                case(OPCode)
+                   `NOP: nextAddr<=8'h1C;  
+                   `LOAD: nextAddr<=8'h07;
+                    `STORE: nextAddr<=8'h0C;
+                    `MOVE: nextAddr<=8'h10;
+                    `ADD: nextAddr<=8'h11;
+                    `AND: nextAddr<=8'h12;
+                    `JUMP: nextAddr<=8'h13;
+                    `JUMPZ: nextAddr<=8'h16;
+                    `JUMPNZ: nextAddr<=8'h19;
+                    `LOADR: nextAddr<=8'h04;
+                    default: nextAddr<=8'h1C;//空指令
+                endcase                    
+            end
+    end
+    //////////////下地址转移///////////
+    always@(posedge clk)
+    begin
+        upc<=nextAddr;
+    end
+    /////////////数据通路////////////
+     assign {PC_i, IR_i, MAR_i, MDR_i, ACC_i, SP_i, R_i,PC_o, MDR_o, ACC_o, SP_o, R_o,PC_Sel, MDR_Sel, ACC_Sel,ALU_Sel,MemRead, MemWrite}=ConSeg;
+
+endmodule

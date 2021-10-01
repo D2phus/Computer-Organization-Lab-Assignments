@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 16 00:38:07 2020
+# Process ID: 19876
+# Current directory: D:/Vivado/Lab1_Cache
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19668 D:\Vivado\Lab1_Cache\Lab1_Cache.xpr
+# Log file: D:/Vivado/Lab1_Cache/vivado.log
+# Journal file: D:/Vivado/Lab1_Cache\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Lab1_Cache/Lab1_Cache.xpr
+update_compile_order -fileset sources_1
+open_project D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/tri_state.v
+update_compile_order -fileset sources_1
+launch_simulation
+source topsim_counter.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source topsim_counter.tcl
+close_sim
+launch_simulation
+source topsim_counter.tcl
+run 10us
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/tri_state.v] -no_script -reset -force -quiet
+remove_files  D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/tri_state.v
+close_sim
+launch_simulation
+source topsim_counter.tcl
+run 10us
+open_project D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/tri_state.v] -no_script -reset -force -quiet
+remove_files  D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/tri_state.v
+file delete -force D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/tri_state.v
+launch_simulation
+source topsim_link.tcl
+run 10us
+current_project Lab1_Cache
+close_project
+current_project Lab_BusControl_B
+current_sim simulation_4
+close_sim
+close_project
+close_sim

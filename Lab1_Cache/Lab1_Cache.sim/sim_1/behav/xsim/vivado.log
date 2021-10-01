@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr  9 02:53:46 2020
+# Process ID: 1324
+# Current directory: D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15032 D:\Vivado\Lab1_Cache\Lab1_Cache.sim\sim_1\behav\xsim\cache_sim_behav.wdb
+# Log file: D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim/vivado.log
+# Journal file: D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {D:\Vivado\Lab1_Cache\Lab1_Cache.sim\sim_1\behav\xsim\cache_sim_behav.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+current_fileset: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 644.148 ; gain = 50.168
+open_wave_database: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 653.113 ; gain = 59.133
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 02:54:44 2020...

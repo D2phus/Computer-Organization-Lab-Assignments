@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Lab5_Scpu.srcs/sources_1/ip/cpuclk" \
+"unit_sim_time_impl.v" \
+"../../../../../Lab5_Scpu.srcs/sim_1/new/unit_sim.v" \
+"../../../../../Lab5_Scpu.srcs/sim_1/new/cpuclk_sim.v" \
+"../../../../../Lab5_Scpu.srcs/sim_1/new/ram_sim.v" \
+"../../../../../../Lab5_Scpu_test_without_bne/mycpu_tb.v" \
+
+# Do not sort compile order
+nosort

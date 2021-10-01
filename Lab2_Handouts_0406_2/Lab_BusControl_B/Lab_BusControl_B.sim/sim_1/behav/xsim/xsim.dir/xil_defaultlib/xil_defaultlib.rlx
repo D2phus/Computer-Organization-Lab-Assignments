@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sim_1/new/topsim_counter.v,1587030610,verilog,,,,topsim_counter,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sources_1/new/controller_counter.v,1587042024,verilog,,D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sources_1/new/io_interface_counter.v,,controller_counter,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sources_1/new/io_interface_counter.v,1587039348,verilog,,D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sources_1/new/top_counter.v,,io_interface_counter,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sources_1/new/top_counter.v,1587036196,verilog,,D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.srcs/sim_1/new/topsim_counter.v,,top_counter,,,,,,,,

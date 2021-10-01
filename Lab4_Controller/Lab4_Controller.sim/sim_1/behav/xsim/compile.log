@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:17]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'PC_i' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module all_sim

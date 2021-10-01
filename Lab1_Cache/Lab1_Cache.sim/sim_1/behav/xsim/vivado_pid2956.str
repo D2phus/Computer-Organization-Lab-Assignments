@@ -1,0 +1,119 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 2956
+License: Customer
+
+Current time: 	Thu Apr 09 02:54:22 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 144
+Available screens: 1
+Available disk space: 17 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	°×Öà
+User home directory: C:/Users/°×Öà
+User working directory: D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/°×Öà/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/°×Öà/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/°×Öà/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim/vivado.log
+Vivado journal file location: 	D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim/vivado.jou
+Engine tmp dir: 	D:/Vivado/Lab1_Cache/Lab1_Cache.sim/sim_1/behav/xsim/.Xil/Vivado-2956-LAPTOP-8DPQ2NC6
+
+Xilinx Environment Variables
+----------------------------
+CUDA_SDK_BIN_PATH: C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.1\bin\win64
+CUDA_SDK_LIB_PATH: C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.1\common\lib\x64
+CUDA_SDK_PATH: C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.1
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 542 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1822 ms.
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bx (cp):  Reading simulation file 'D:\Vivado\Lab1_Cache\Lab1_Cache.sim\sim_1\behav\xsim\cache_sim_behav.wdb' : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_wave_database {D:\Vivado\Lab1_Cache\Lab1_Cache.sim\sim_1\behav\xsim\cache_sim_behav.wdb} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 567 MB. GUI used memory: 52 MB. Current time: 4/9/20, 2:54:25 AM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+83302kb) [00:00:21]
+// [Engine Memory]: 605 MB (+483215kb) [00:00:21]
+// [GUI Memory]: 107 MB (+21899kb) [00:00:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  3228 ms.
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1217 ms.
+// Tcl Message: current_fileset: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 633.871 ; gain = 54.379 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 655 MB (+20528kb) [00:00:25]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: open_wave_database: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 664.297 ; gain = 84.805 
+dismissDialog("Reading simulation file 'D:\\Vivado\\Lab1_Cache\\Lab1_Cache.sim\\sim_1\\behav\\xsim\\cache_sim_behav.wdb'"); // bx (cp)
+// TclEventType: STOP_PROGRESS_DIALOG
+closeMainWindow("Vivado 2018.3"); // cp
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

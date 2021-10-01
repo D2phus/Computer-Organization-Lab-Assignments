@@ -1,0 +1,490 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 31 02:28:43 2019
+# Process ID: 9732
+# Current directory: E:/package_28/package_28.runs/synth_1
+# Command line: vivado.exe -log package.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source package.tcl
+# Log file: E:/package_28/package_28.runs/synth_1/package.vds
+# Journal file: E:/package_28/package_28.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source package.tcl -notrace
+Command: synth_design -top package -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14456 
+WARNING: [Synth 8-2611] redeclaration of ansi port segs0 is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:77]
+WARNING: [Synth 8-2611] redeclaration of ansi port segs1 is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:78]
+WARNING: [Synth 8-2611] redeclaration of ansi port led is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port len is not allowed [E:/package_28/package_28.srcs/sources_1/new/package.v:80]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 375.512 ; gain = 112.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'package' [E:/package_28/package_28.srcs/sources_1/new/package.v:23]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter N0 bound to: 8'b11111100 
+	Parameter N1 bound to: 8'b01100000 
+	Parameter N2 bound to: 8'b11011010 
+	Parameter N3 bound to: 8'b11110010 
+	Parameter N4 bound to: 8'b01100110 
+	Parameter N5 bound to: 8'b10110110 
+	Parameter N6 bound to: 8'b10111110 
+	Parameter N7 bound to: 8'b11100000 
+	Parameter N8 bound to: 8'b11111110 
+	Parameter N9 bound to: 8'b11100110 
+	Parameter NA bound to: 8'b11101110 
+	Parameter NB bound to: 8'b00111110 
+	Parameter NC bound to: 8'b00011010 
+	Parameter ND bound to: 8'b01111010 
+	Parameter NE bound to: 8'b10011110 
+	Parameter NF bound to: 8'b10001110 
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:436]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:503]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:665]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:750]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:825]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:900]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:974]
+INFO: [Synth 8-226] default block is never used [E:/package_28/package_28.srcs/sources_1/new/package.v:1069]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/package_28/package_28.srcs/sources_1/new/package.v:311]
+WARNING: [Synth 8-4767] Trying to implement RAM 'code_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "code_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'package' (1#1) [E:/package_28/package_28.srcs/sources_1/new/package.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.277 ; gain = 155.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.277 ; gain = 155.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.277 ; gain = 155.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/package_28/package_28.srcs/constrs_1/new/package.xdc]
+Finished Parsing XDC File [E:/package_28/package_28.srcs/constrs_1/new/package.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/package_28/package_28.srcs/constrs_1/new/package.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/package_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/package_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.699 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 753.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 753.699 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 753.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 753.699 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 753.699 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 753.699 ; gain = 490.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentstate_reg' in module 'package'
+INFO: [Synth 8-5545] ROM "nextstate" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "isfull" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clk2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clk3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "nextstate" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextstate" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextstate" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextstate" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "count4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hexreg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "srcode0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "iscorrect0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hexreg60" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                             0000 |                             0000
+                      S1 |                             0001 |                             0001
+                      S2 |                             0010 |                             0010
+                      S3 |                             0011 |                             0011
+                      S6 |                             0100 |                             0110
+                      S7 |                             0101 |                             0111
+                      S8 |                             0110 |                             1000
+                      S4 |                             0111 |                             0100
+                      S5 |                             1000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentstate_reg' using encoding 'sequential' in module 'package'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 753.699 ; gain = 490.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 19    
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 2     
+	   9 Input    256 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   9 Input     30 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 58    
+	   9 Input     16 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 6     
+	  18 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 2     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   9 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module package 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 19    
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 2     
+	   9 Input    256 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   9 Input     30 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 58    
+	   9 Input     16 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 6     
+	  18 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 2     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   9 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "clk2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "O110" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "isfull" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "nextstate" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "clk3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\boxnow_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hexreg7_reg[0] )
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[0]' (FDE) to 'hexreg2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hexreg2_reg[0] )
+INFO: [Synth 8-3886] merging instance 'hexreg1_reg[0]' (FDE) to 'hexreg0_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hexreg0_reg[0] )
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[1]' (FDE) to 'hexreg3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'hexreg2_reg[1]' (FDE) to 'hexreg2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[2]' (FDE) to 'hexreg3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hexreg2_reg[2]' (FDE) to 'hexreg2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'hexreg0_reg[2]' (FDE) to 'hexreg0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[3]' (FDE) to 'hexreg3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hexreg2_reg[3]' (FDE) to 'hexreg2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hexreg0_reg[3]' (FDE) to 'hexreg0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[4]' (FDE) to 'hexreg3_reg[5]'
+INFO: [Synth 8-3886] merging instance 'hexreg2_reg[4]' (FDE) to 'hexreg2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'hexreg0_reg[4]' (FDE) to 'hexreg0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[5]' (FDE) to 'hexreg3_reg[6]'
+INFO: [Synth 8-3886] merging instance 'hexreg0_reg[5]' (FDE) to 'hexreg0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'hexreg3_reg[6]' (FDE) to 'hexreg3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'hexreg2_reg[6]' (FDE) to 'hexreg2_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\hexreg3_reg[7] )
+INFO: [Synth 8-3886] merging instance 'en_reg[3]' (FDE) to 'en_reg[2]'
+INFO: [Synth 8-3886] merging instance 'en_reg[1]' (FDE) to 'en_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\segs1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\segs0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\hexreg2_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 753.699 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|package     | hexreg7    | 32x8          | LUT            | 
+|package     | hexreg7    | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 753.699 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 754.160 ; gain = 491.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    63|
+|3     |LUT1   |    15|
+|4     |LUT2   |   124|
+|5     |LUT3   |    74|
+|6     |LUT4   |   135|
+|7     |LUT5   |   136|
+|8     |LUT6   |   698|
+|9     |MUXF7  |    28|
+|10    |MUXF8  |     3|
+|11    |FDRE   |   538|
+|12    |FDSE   |    34|
+|13    |IBUF   |    10|
+|14    |OBUF   |    40|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1900|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 813.973 ; gain = 550.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 813.973 ; gain = 215.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 813.973 ; gain = 550.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'package' is not ideal for floorplanning, since the cellview 'package' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 813.973 ; gain = 564.113
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.973 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/package_28/package_28.runs/synth_1/package.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file package_utilization_synth.rpt -pb package_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 31 02:29:13 2019...

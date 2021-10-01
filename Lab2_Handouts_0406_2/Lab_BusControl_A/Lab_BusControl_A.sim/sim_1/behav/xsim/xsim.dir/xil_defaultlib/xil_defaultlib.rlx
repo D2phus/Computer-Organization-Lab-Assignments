@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sim_1/new/topsim_link.v,1586958960,verilog,,,,topsim_link,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/controller_link.v,1587017852,verilog,,D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/io_interface_link.v,,controller_link,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/io_interface_link.v,1587018258,verilog,,D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/top_link.v,,io_interface_link,,,,,,,,
+D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/top_link.v,1587026588,verilog,,D:/Vivado/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sim_1/new/topsim_link.v,,top_link,,,,,,,,
+,,,,,,,,,,,,,,

@@ -1,0 +1,42 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e53b4268b9ee4796ab615f0eae5a4551 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mycpu_tb_behav xil_defaultlib.mycpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=42,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.EXT
+Compiling module xil_defaultlib.MUX_ALU_a
+Compiling module xil_defaultlib.MUX_ALU_b
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.executs32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.NPC
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.prgrom
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.ifetc32
+Compiling module xil_defaultlib.MUX_RF_a3
+Compiling module xil_defaultlib.MUX_RF_wd
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.idecode32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.mycpu_tb
+WARNING: [XSIM 43-3373] "D:/Vivado/Lab5_Scpu_test_without_bne/mycpu_tb.v" Line 169. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mycpu_tb_behav

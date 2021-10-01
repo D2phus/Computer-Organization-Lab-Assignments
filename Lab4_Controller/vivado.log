@@ -1,0 +1,2473 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 16 15:10:15 2020
+# Process ID: 7512
+# Current directory: D:/Vivado/Lab4_Controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17048 D:\Vivado\Lab4_Controller\Lab4_Controller.xpr
+# Log file: D:/Vivado/Lab4_Controller/vivado.log
+# Journal file: D:/Vivado/Lab4_Controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Lab4_Controller/Lab4_Controller.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 706.430 ; gain = 101.438
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sum_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sum_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/sum_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5d482cd56d87422b98c35799262c4d54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sum_sim_behav xil_defaultlib.sum_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.mem_wrap
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sum_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sum_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim/xsim.dir/sum_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat May 16 18:02:59 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sum_sim_behav -key {Behavioral:sim_1:Functional:sum_sim} -tclbatch {sum_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sum_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000000
+
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100000
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000001
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100011
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000010
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 01000000
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000011
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000000
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000101
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 01010000
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000110
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00110000
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000111
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001000
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001001
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100011
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sum_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 763.090 ; gain = 12.379
+set_property top all_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'all_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj all_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module all_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5d482cd56d87422b98c35799262c4d54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot all_sim_behav xil_defaultlib.all_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2922] 'top' expects 2 arguments [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v:12]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'all_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj all_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'PC_i' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module all_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5d482cd56d87422b98c35799262c4d54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot all_sim_behav xil_defaultlib.all_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.mem_wrap
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.all_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot all_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim/xsim.dir/all_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat May 16 18:05:34 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 767.988 ; gain = 0.223
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "all_sim_behav -key {Behavioral:sim_1:Functional:all_sim} -tclbatch {all_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source all_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000000
+
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100000
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000001
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100011
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000010
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 01000000
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000011
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000000
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000101
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 01010000
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000110
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00110000
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000111
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001000
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001001
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100011
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'all_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 777.594 ; gain = 9.828
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 788.563 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'all_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj all_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:17]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'PC_i' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module all_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5d482cd56d87422b98c35799262c4d54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot all_sim_behav xil_defaultlib.all_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'uPC' [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.mem_wrap
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.all_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot all_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "all_sim_behav -key {Behavioral:sim_1:Functional:all_sim} -tclbatch {all_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source all_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000000
+
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100000
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000001
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100011
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000010
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 01000000
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000011
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000000
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000101
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 01010000
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000110
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00110000
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000111
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001000
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001001
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100011
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'all_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 788.563 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'all_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj all_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:17]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'PC_i' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module all_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5d482cd56d87422b98c35799262c4d54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot all_sim_behav xil_defaultlib.all_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.mem_wrap
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.all_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot all_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "all_sim_behav -key {Behavioral:sim_1:Functional:all_sim} -tclbatch {all_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source all_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000000
+
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100000
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000000 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000001
+
+PC: 00000001 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000001 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00100011
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000010
+
+PC: 00000010 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 00100000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 01000000
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000010 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000011
+
+PC: 00000011 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 01000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 01000000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000011 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000100 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000000
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00100100 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000101
+
+PC: 00000101 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 00100000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 01010000
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000101 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000110
+
+PC: 00000110 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 01010000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 01010000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00110000
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000110 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000111
+
+PC: 00000111 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00110000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00000111 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00100100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00100100 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001000
+
+PC: 00001000 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00110000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100000
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001000 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00001001
+
+PC: 00001001 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100000 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00001001 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00100011
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00100011 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: zzzzzzzz
+
+PC: 00001010 
+ IR: 00100000 
+ MAR: 00100011 
+ MDR: 00000100 
+ ACC: 00000100 
+ SP: 00000000 
+ R: 00000100 
+ Bus: 00000100
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'all_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 788.563 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'all_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj all_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:17]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'PC_i' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'uPC' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'CMDR' is not allowed [D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module all_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5d482cd56d87422b98c35799262c4d54 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot all_sim_behav xil_defaultlib.all_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.mem_wrap
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.all_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot all_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim/xsim.dir/all_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 83.234 ; gain = 1.270
+INFO: [Common 17-206] Exiting Webtalk at Sun May 17 21:05:20 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 811.773 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "all_sim_behav -key {Behavioral:sim_1:Functional:all_sim} -tclbatch {all_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source all_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PC: 00000000 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: 00000000 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: 00000000 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000001
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000001 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000001 
+ IR: zzzzzzzz 
+ MAR: 00000001 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: zzzzzzzz 
+ MAR: 00000001 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000010
+
+PC: 00000010 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000010 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000010 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000011
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000011 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000011 
+ IR: zzzzzzzz 
+ MAR: 00000011 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: zzzzzzzz 
+ MAR: 00000011 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000100
+
+PC: 00000100 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000100 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000100 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000101
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000101 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000101 
+ IR: zzzzzzzz 
+ MAR: 00000101 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: zzzzzzzz 
+ MAR: 00000101 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000110
+
+PC: 00000110 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000110 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000110 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00000111
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000111 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00000111 
+ IR: zzzzzzzz 
+ MAR: 00000111 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: zzzzzzzz 
+ MAR: 00000111 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: 00001000
+
+PC: 00001000 
+ IR: zzzzzzzz 
+ MAR: 00001000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00001000 
+ IR: zzzzzzzz 
+ MAR: 00001000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: zzzzzzzz 
+ MAR: 00001000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: zzzzzzzz 
+ MAR: 00001000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: zzzzzzzz 
+ MAR: 00001000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+PC: 00001001 
+ IR: zzzzzzzz 
+ MAR: 00001000 
+ MDR: zzzzzzzz 
+ ACC: 00000000 
+ SP: 00000000 
+ R: 00000000 
+ Bus: zzzzzzzz
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'all_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 816.418 ; gain = 4.645
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 21:48:10 2020...
