@@ -1,3 +1,3 @@
 # Computer Organization Lab Assignments
-Lab assignments for omputer Design and Practice, and Principles of Computer Organization courses.
+Lab assignments for Computer Design and Practice, and Principles of Computer Organization courses.
 
