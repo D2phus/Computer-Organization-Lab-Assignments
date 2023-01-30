@@ -1,2 +1,3 @@
-# HITSZ_ComputerOrganization_Lab
-Lab assignments for Computer Organization course at Harbin Institute of Technology, Shenzhen. 
+# Computer Organization Lab Assignments
+Lab assignments for omputer Design and Practice, and Principles of Computer Organization courses.
+
